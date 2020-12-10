@@ -1,0 +1,86 @@
+/* universal star operator */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css root variables */
+:root {
+    --red: #E51400;
+    --green: #008A00;
+    --linked-in: #0077B5;
+    --soft-white: #f1f1f1;
+    --main-background: #003F6F;
+}
+
+/* Html and Body Tag */
+html {  font-size: 62.5%; }
+
+body {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-background);
+    overflow: hidden;
+    opacity: 0.9;
+    position: relative;
+}
+
+/* Page Header */
+.header {
+    display: flex;
+}
+.header .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9rem;
+    height: 9rem;
+    background: var(--red);
+    border-radius: 0 0 0 1.7rem;
+    opacity: 0.9;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+}
+.header .navigation .fa {
+    color: var(--soft-white);
+    font-size: 3rem;
+}
+
+/* Hero Container */
+/* Hero Img */
+.hero .hero-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* Hero locate Button */
+.hero .button {
+    width: 25rem;
+    height: 7rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-decoration: underline;
+    border: none;
+    font-family: 'Langar', cursive;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 10;
+}
+.hero .button:focus {
+    outline: 0;
+}

@@ -11,8 +11,10 @@
 :root {
     --red: #E51400;
     --green: #008A00;
+    --linked-in: #0077B5;
     --soft-white: #f1f1f1;
-    --main-background: #6A00FF;
+    --soft-background: #001A4B;
+    --main-background: #00052A;
 }
 
 /* Html and Body Tag */
@@ -20,10 +22,59 @@ html {  font-size: 62.5%; }
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: var(--main-background);
+    background: linear-gradient(129deg , var(--soft-background) , var(--main-background) 35%);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Page Header */
+.header {
+    width: 100%;
+}
+.header-icon {
+    width: 5rem;
+    height: 5rem;
+    border: 0.2rem solid #0077B5;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0 0 1rem;
+    z-index: 10;
+}
+.header-icon-head {
+    color: var(--soft-white);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+}
+.header-border {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero .main-temp {
+    font-size: 17rem;
+    margin: 1rem;
+    color: var(--soft-white);
+    font-family: 'Langar', cursive;
+}
+.hero .main-temp-child {
+    font-size: 7rem;
 }
