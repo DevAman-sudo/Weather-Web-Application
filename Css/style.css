@@ -78,3 +78,57 @@ body {
 .hero .main-temp-child {
     font-size: 7rem;
 }
+.hero-temp-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--soft-white);
+    font-family: 'Langar', cursive;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}   
+
+/* Country Name */
+.hero .country-name {
+    color: var(--soft-white);
+    font-weight: bold;
+    font-size: 3rem;
+    margin: -5rem 0 0 1rem;
+}
+
+/* Page Country Search Form */
+.form {
+    width: 100%;
+    margin: 5rem auto 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Form TextArea */
+.form .text-area {
+    width: 75vw;
+    height: 5rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    border-radius: 5rem;
+    border: none;
+    font-weight: bold;
+}
+.form .text-area:focus {
+    outline: 0;
+}
+
+/* Form Submit Button */
+.form .form-button {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: none;
+}
+.form .form-button {
+    outline: 0;
+}

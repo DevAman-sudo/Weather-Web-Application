@@ -70,12 +70,28 @@ button.addEventListener('click', (event) => {
     // Changing Page Route //
     window.location = "/landing.html";
 
-    // Animating Button On Click //
-    /*anime({
-        targets: button,
-        width: '27rem',
-        height: '6rem',
+});
+    // Animating Hero Comtainer Content //
+    anime({
+        targets: '.a1',
+        translateX: -10 ,
         easing: 'easeInOutQuad',
         direction: 'alternate',
-    }); */
-});
+        loop: true ,
+    }); 
+    anime({
+        targets: '.a2',
+        translateX: -10,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true,
+        delay: 30
+    });
+    anime({
+        targets: '.a3',
+        translateX: -10,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true,
+        delay: 60
+    });
