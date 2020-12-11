@@ -70,13 +70,16 @@ body {
     flex-direction: column;
 }
 .hero .main-temp {
-    font-size: 17rem;
+    font-size: 15rem;
     margin: 1rem;
     color: var(--soft-white);
     font-family: 'Langar', cursive;
 }
 .hero .main-temp-child {
-    font-size: 7rem;
+    font-size: 5rem;
+    margin: 1rem 0 0 -1rem;
+    color: var(--soft-white);
+    font-family: 'Langar', cursive;
 }
 .hero-temp-child {
     font-size: 1.5rem;
@@ -92,11 +95,11 @@ body {
 }   
 
 /* Country Name */
-.hero .country-name {
+.hero .cp-container {
     color: var(--soft-white);
     font-weight: bold;
     font-size: 3rem;
-    margin: -5rem 0 0 1rem;
+    margin: -4rem 0 0 1rem;
 }
 
 /* Page Country Search Form */
