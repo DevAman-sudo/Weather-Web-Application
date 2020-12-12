@@ -65,7 +65,7 @@ body {
 /* Hero Section */
 .hero {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +82,7 @@ body {
     font-family: 'Langar', cursive;
 }
 .hero-temp-child {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--soft-white);
     font-family: 'Langar', cursive;
@@ -91,8 +91,14 @@ body {
     flex-direction: column;
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 0;
+    padding: 1rem;
+    background: var(--soft-background);
+    border-radius: 1rem 0 0 1rem;
 }   
+.hero-temp-grandChild {
+	margin-left: auto;
+}
 
 /* Country Name */
 .hero .cp-container {
@@ -105,7 +111,7 @@ body {
 /* Page Country Search Form */
 .form {
     width: 100%;
-    margin: 5rem auto 1rem auto;
+    margin: 4rem auto 1rem auto;
     display: flex;
     justify-content: space-between;
 }
