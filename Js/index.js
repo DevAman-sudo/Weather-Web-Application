@@ -68,7 +68,7 @@ year.innerText = Year ;
 // Changing Window Locate On Ckick //
 button.addEventListener('click', (event) => {
     // Changing Page Route //
-    window.location = "/landing.html";
+    window.location = "/main.html";
 
 });
     // Animating Hero Comtainer Content //

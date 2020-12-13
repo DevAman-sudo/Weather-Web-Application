@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts Langar -- stylesheet Path -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <!-- Google Fonts Poppins -- stylesheet Path -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <!-- bootstrap font awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Local Css File Path -->
+    <link rel="stylesheet" href="Css/main.css" />
+    <!-- Page Title And FavIcon -->
+    <title>Weather Application</title>
+</head>
+<body>
+    
+    <!-- Weather Web App Header -->
+    <header class="header" id="header">
+        <!-- Icon Image -->
+        <img class="header-icon" id="header-icon" src="Img/icon.png" alt="icon" />
+        <small class="header-icon-head">forcast</small>
+        <!-- Image For Border Effect -->
+        <img class="header-border" id="header-border" src="Img/head1.png" alt="border" />
+    </header>
+    
+    <!-- Hero Section To Display Main Temp -->
+    <hero class="hero" id="hero">
+        <!-- Main Temp -->
+        <h1><span class="main-temp" id="main-temp"></span><span class="main-temp-child" id="main-temp-child">°C</span></h1>
+        
+        <!-- degreeF and degreeK -->
+        <div class="hero-temp-child" id="hero-temp-child">
+            <span class="hero-temp-grandChild degreeF" id="degreeF" ></span>
+            <span class="hero-temp-grandChild degreeK" id="degreeK" ></span>
+            <span class="hero-temp-grandChild condition" id="condition">Sunny</span>
+        </div>
+        
+        <!-- Country Name Section --> 
+        <div class="cp-container">
+            <span class="place-name" id="place-name"></span> ,
+            <span class="country-name" id="country-name" ></span>
+        </div>
+    </hero>
+    
+    <!-- Country Temp Searching Container Form -->
+    <form class="form" id="form" action="#" method="get" accept-charset="utf-8">
+        <!-- Input Box For Form -->
+        <input type="text" name="textArea" class="text-area" id="text-area" placeholder="Search City ..." autocomplete="off" />
+        <!-- Buttom\n For Page Submittion -->
+        <button class="form-button" id="formButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+
+      
+    <!-- Anime Js CDN link -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Local JavaScript File Path -->
+    <script defer src="Js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
